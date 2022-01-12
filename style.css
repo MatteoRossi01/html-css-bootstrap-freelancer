@@ -106,6 +106,14 @@
 /* Jumbotron */
 
 /* Box-img */
+.container-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1375;
+}
+
 .title.main {
     font-size: 35px;
     color: #2C3E50;
@@ -121,6 +129,43 @@
 .img-main {
     border-radius: 20px;
     width: 520px;
+}
+
+.img-box {
+    padding: 0px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-effect {
+    box-sizing: border-box;
+    border: 0px solid #fff;
+    border-radius: 20px;
+    width: 520px;
+    height: 375px;
+    position: absolute;
+    display: none;
+}
+
+.fa-plus {
+    position: absolute;
+    right: 230px;
+    bottom: 130px;
+    font-size: 90px;
+    color: #fff;
+    display: none;
+}
+
+.img-box:hover .img-effect {
+    display: block;
+    background-color: #1ABC9C;
+    opacity: 0.7;
+}
+
+.img-box:hover .fa-plus {
+    display: block;
 }
 /* Box-img */
 
@@ -168,6 +213,24 @@
 .style-contact {
    font-size: 22px; 
    color: #2C3E50;
+}
+
+.form-floating>label {
+    font-size: 22px; 
+    color: #2C3E50;
+    font-weight: 500;
+}
+
+.no-border {
+    border: 0px solid #ced4da;
+}
+
+.border-b {
+    border-bottom: 1px solid #ced4da;
+}
+
+textarea.textarea {
+    min-height: calc(5.5em + (0.75rem + 2px));
 }
 
 .last-btn-contact {
@@ -315,6 +378,17 @@
     .img-main {
         width: 320px;
     }
+
+    .img-effect {
+        width: 320px;
+        height: 231px;
+    }
+
+    .fa-plus {
+        font-size: 70px;
+        right: 140px;
+        bottom: 80px;
+    }
     /* Portfolio */
 
     /* Download */
@@ -340,7 +414,7 @@
     /* Contact */
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
 
     /* Portfolio */
     .line-blu {
@@ -360,6 +434,17 @@
 
     .img-main {
         width: 420px;
+    }
+
+    .img-effect {
+        width: 420px;
+        height: 303px;
+    }
+
+    .fa-plus {
+        font-size: 80px;
+        right: 185px;
+        bottom: 120px;
     }
     /* Portfolio */
 
@@ -381,7 +466,6 @@
 
     .title-download {
         padding-top: 90px;
-        
     }
     /* Download */
 
@@ -494,6 +578,17 @@
     .img-main {
         width: 350px;
         height: 260px;
+    }
+
+    .img-effect {
+        width: 350px;
+        height: 260px;
+    }
+
+    .fa-plus {
+        font-size: 70px;
+        right: 155px;
+        bottom: 120px;
     }
     /* Portfolio */
 
