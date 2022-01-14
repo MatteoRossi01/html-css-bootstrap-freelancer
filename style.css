@@ -10,10 +10,23 @@
     height: 80px;
 }
 
+.box-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: inherit; 
+    align-items: center;
+    justify-content: space-between;
+}
+
 .style-brand {
     color: #fff;
     font-weight: 700;
     text-decoration: none;
+}
+
+.box-toggle {
+    width: 100%;
+    padding-right: 20px;
 }
 
 .hb-menu {
@@ -80,6 +93,11 @@
 .container-jumbotron {
     height: 500px;
     background-color: #1ABC9C;
+}
+
+.box-jumbotron {
+    max-width: 540px;
+    margin: auto;
 }
 
 .img-avatar {
@@ -183,10 +201,20 @@
 .p-download {
     font-size: 29px;
     color: #fff;
+    text-align: start;
 }
 
 .container-text {
-    width: 400px;
+    width: 90%;
+    margin: auto;
+}
+
+.row-download {
+    margin: auto;
+}
+
+.col-download {
+    max-width: 600px;
 }
 
 .btn-download {
@@ -598,7 +626,7 @@ textarea.textarea {
     }
 
     .container-text {
-        width: 1500px;
+        width: 90%;
         display: flex;
         flex-direction: row;
         margin-bottom: 60px;
